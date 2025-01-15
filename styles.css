@@ -1,0 +1,1350 @@
+:root {
+    --color_primario: #06046b;
+    --color_primario_suave: #06046b;
+    --color_blanco: #fff;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.header {
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+}
+
+.menu_hamburguesa {
+    display: none;
+}
+
+.menu_hamburguesa:checked+.ul_links {
+    height: calc(100vh - var(--altura_header));
+}
+
+.logo {
+    color: var(--color_blanco);
+}
+
+
+
+.list_icon {
+    color: white;
+    cursor: pointer;
+}
+
+.ul_links {
+    width: 100%;
+    background-color: var(--color_primario_suave);
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /* height: calc(100vh - var(--altura_header)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transition: all .3s;
+}
+
+
+.link {
+    font-size: 1em;
+    color: var(--color_blanco);
+}
+
+header .logo-img {
+    width: 50px;
+}
+
+header nav .links button {
+    background-color: rgb(58, 236, 8);
+    color: rgb(0, 0, 0);
+    border: none;
+    margin: 20px 15px;
+    padding: 8px 17px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+
+
+/* SECCION Servicios*/
+#servicios .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    text-align: center;
+    padding: 300px 12px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.6)), url("imagenes/inicio.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#servicios .container h1 {
+    color: rgba(255, 255, 255, 0.042);
+    padding: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#servicios .container p {
+    color: white;
+    padding: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#servicios .container button {
+    display: block;
+    width: 100%;
+    color: #000000;
+    background-color: #049602;
+    border-color: #049602;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    margin: 20px 10px;
+    padding: 15px 40px;
+}
+
+/* Servicios */
+#servicios .container h1 {
+    color: white;
+    padding: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#servicios .container p {
+    color: white;
+    padding: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#servicios .container h3 {
+    color: white;
+    padding: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* SECCION Como Funciona */
+#como-funciona .container {
+    padding: 10% 5%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* Espaciado entre elementos */
+}
+
+#como-funciona .container p {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#como-funciona .contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#como-funciona .contenido-principal .imagen img {
+    flex: 1 1 30%;
+    max-width: 50%;
+    display: none;
+    /* Ocultar la imagen */
+}
+
+#como-funciona .contenido-principal .texto {
+    flex: 1 1 60%;
+    text-align: left;
+    color: #000;
+}
+
+#como-funciona .contenido-principal .texto h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#como-funciona .contenido-principal .texto-lateral {
+    margin-top: 1rem;
+}
+
+#como-funciona .contenido-principal .texto-lateral p {
+    background-color: #f9f9f9;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    text-align: start;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* SECCION Beneficios*/
+
+#beneficios {
+    padding: 3% 5%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#beneficios .container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#beneficios .titulo-beneficios h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.bene {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.bene-img {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.bene-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto {
+    flex: 1 1 50%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.texto p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+    flex: 1 1 50%;
+    font-weight: bold;
+}
+
+.p-beneficios {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.bene-cuente {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.bene-cuente-h2 h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.bene-cuente-texto button {
+    display: block;
+    width: 100%;
+    color: #000000;
+    background-color: #049602;
+    border-color: #049602;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    margin: 20px 10px;
+    padding: 15px 40px;
+}
+
+.bene-img-2 {
+    flex: 1 1 100%;
+    text-align: end;
+    display: grid;
+    /* disponer en bloques */
+    margin: 0 auto;
+    /* centrar horizontalmente */
+    max-width: 100%;
+    /* Ancho máximo */
+
+    text-align: center;
+
+
+}
+
+.bene-img-2 img {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.bene-img-2 {
+    flex: 1 1 100%;
+    text-align: end;
+    display: grid;
+    /* disponer en bloques */
+    margin: 0 auto;
+    /* centrar horizontalmente */
+    max-width: 100%;
+    /* Ancho máximo */
+    text-align: center;
+}
+
+.bene-img-2 img {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#contacto {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal de la sección */
+.container-contacto {
+    margin: 0 auto;
+    padding: 0 15px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/imagenes/contacto.png") no-repeat center center/cover;
+}
+
+/* Estilo del encabezado */
+.contacto h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo del párrafo debajo del título */
+.contacto p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Campos de entrada del formulario */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #888888;
+    border-radius: 8px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #aaaaaa;
+}
+
+/* Estilo del botón de enviar */
+form button {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background-color: #049602;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #037d01;
+}
+
+/* Asegura que los campos de texto tengan un tamaño adecuado */
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+footer {
+    background-color: #050156;
+    color: #ffffff;
+    padding: 40px 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.redes-sociales .icono {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.redes-sociales .icono:hover {
+    background-color: #888888;
+}
+
+.redes-sociales .icono img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Contenedor del footer */
+.contenedor-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Enlaces en el footer */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+/* Si decides agregar más enlaces en el futuro */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer li {
+    display: inline;
+}
+
+
+
+
+
+
+/*SECCION: como-funciona*/
+#quienes-somos .container {
+    padding: 1% 1%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#quienes-somos .container h1 {
+    text-align: center;
+    /* font-size: 1.25rem; */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+
+
+#quienes-somos {
+    padding: 3% 5%;
+    /* Espaciado general de la sección */
+    background-color: #ffffff;
+    /* Fondo blanco */
+}
+
+#quienes-somos p {
+    text-align: center;
+    /* Centrar el texto */
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    /* Ajustar tamaño de la fuente */
+    font-weight: bold;
+    color: #000000;
+}
+
+#quienes-somos .container p {
+    text-align: center;
+    /* font-size: 1.25rem; */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+}
+
+#quienes-somos .contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+    /* Asegura que los elementos se ajusten en pantallas pequeñas */
+    gap: 2rem;
+    /* Espaciado entre columnas */
+    justify-content: center;
+    /* Centrar el contenido principal */
+    align-items: flex-start;
+    /* Alineación superior para textos largos */
+}
+
+
+#quienes-somos .texto-lateral {
+    margin-top: 0rem;
+    max-width: 100%;
+}
+
+#quienes-somos .texto-lateral p {
+    background-color: #f9f9f9;
+    /* Fondo ligeramente gris */
+    margin: 0.5rem 0;
+    /* Espaciado entre los bloques */
+    padding: 0.8rem 1rem;
+    /* Espaciado interno */
+    text-align: left;
+    /* Alineación izquierda */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    font-size: 1.2rem;
+    /* Tamaño del texto */
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+.bene-img-2 .logo-img-qs {
+    width: 120px;
+    height: auto;
+    text-align: center;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.card .card-icon {
+    margin: 10px;
+}
+
+.card .card-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.card-body p {
+    font-size: 16px;
+    /* Ajusta a un tamaño razonable */
+    color: #333;
+    /* Puedes ajustar el color según tu preferencia */
+}
+
+
+
+
+@media (min-width:768px) {
+    .labe_hamburguesa {
+        display: none;
+    }
+
+    .ul_links {
+        position: static;
+        width: auto;
+        height: 70px;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .link {
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }
+
+    .link:hover {
+        background-color: #ffffff;
+    }
+
+    .contacto h1 {
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-top: 30px;
+    }
+
+    .contacto p {
+        font-size: 1em;
+    }
+
+    .navbar {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0em 3em;
+    }
+
+    #servicios {
+        position: relative;
+        /* Contenedor padre con posición relativa */
+        width: 100%;
+        height: 100vh;
+        /* Ocupa toda la altura de la ventana */
+        overflow: hidden;
+        /* Previene que el contenido se desborde */
+    }
+
+    #servicios .container {
+        position: relative;
+        /* Mantiene su posición en relación al padre */
+        z-index: 2;
+        /* Coloca este elemento por encima de las imágenes */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 500px 12px;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        /* Opcional: asegúrate de que el texto sea visible */
+    }
+
+    #servicios .img-fondo1,
+    #servicios .img-fondo2 {
+        position: absolute;
+        /* Posición absoluta para superponer */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        /* Coloca las imágenes detrás del contenido */
+    }
+
+    #servicios .img-fondo1 {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+            url("imagenes/capa-1.png");
+        opacity: 1;
+        /* Ajusta la opacidad si deseas */
+    }
+
+    #servicios .img-fondo2 {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+            url("imagenes/inicio.png");
+        z-index: 0;
+        /* Esta capa estará detrás */
+        opacity: 0.6;
+        /* Opcional: Ajusta la opacidad */
+    }
+
+    #como-funciona .container p {
+        text-align: center;
+        /* font-size: 1.25rem; */
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 4rem;
+        font-size: 5rem;
+    }
+
+    #como-funciona .container {
+        padding: 5% 5%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #servicios .container h1 {
+        color: white;
+        font-size: 3em;
+        /* Tamaño del texto */
+        font-weight: bold;
+        margin-top: 300px;
+        margin-left: 150px;
+        /* Espacio superior e inferior */
+        padding: 10px;
+        text-align: left;
+        /* Alinea el texto al lado izquierdo */
+        width: 50%;
+        /* Ancho del 60% de la pantalla */
+        line-height: 1.4;
+        /* Mejora el espaciado entre líneas */
+
+
+    }
+
+
+    #servicios .container p {
+        color: white;
+        font-size: 5em;
+        /* Tamaño del texto */
+        font-weight: bold;
+        text-align: left;
+        /* Alinea el texto al lado izquierdo */
+        width: 60%;
+        /* Ancho igual al del h1 */
+        margin: 0 150px;
+        /* Misma alineación horizontal que el h1 */
+        padding: 10px 0;
+        /* Opcional: Espaciado interno */
+        line-height: 1.4;
+        /* Espaciado entre líneas */
+    }
+
+    #servicios .container .demo {
+        display: block;
+        width: 20%;
+        color: #000000;
+        background-color: #049602;
+        border-color: #049602;
+        padding: 1rem;
+        font-size: 1.25rem;
+        border-radius: 1rem;
+        margin-top: 50px;
+        margin-left: 330px;
+    }
+
+
+
+    /*SECCION: como-funciona*/
+    #como-funciona {
+        padding: 3% 5%;
+        /* Espaciado general de la sección */
+        background-color: #ffffff;
+        /* Fondo blanco */
+    }
+
+    #como-funciona p {
+        text-align: center;
+        /* Centrar el texto */
+        margin-bottom: 2rem;
+        font-size: 5rem;
+        /* Ajustar tamaño de la fuente */
+        font-weight: bold;
+        color: #000000;
+    }
+
+    #como-funciona .container p {
+        text-align: center;
+        /* font-size: 1.25rem; */
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1.5rem;
+        font-size: 5rem;
+    }
+
+    #como-funciona .contenido-principal {
+        display: flex;
+        flex-wrap: wrap;
+        /* Asegura que los elementos se ajusten en pantallas pequeñas */
+        gap: 2rem;
+        /* Espaciado entre columnas */
+        justify-content: center;
+        /* Centrar el contenido principal */
+        align-items: flex-start;
+        /* Alineación superior para textos largos */
+    }
+
+    #como-funciona .contenido-principal .imagen {
+        flex: 1 1 30%;
+        /* Ocupa el 30% del contenedor */
+        max-width: 50%;
+        /* Ancho máximo del 50% */
+        display: block;
+        /* Mostrar la imagen */
+    }
+
+    #como-funciona .contenido-principal .imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5% / 5%;
+        overflow: hidden;
+        display: block;
+        max-width: 100%;
+    }
+
+    #como-funciona .texto {
+        flex: 1 1 50%;
+        /* Ocupa el 50% del contenedor */
+        max-width: 60%;
+    }
+
+    #como-funciona .texto h2 {
+        font-size: 2em;
+        /* Tamaño del título */
+        margin-bottom: 1rem;
+        /* Separación del título con los párrafos */
+        color: #000000;
+        font-weight: bold;
+    }
+
+    #como-funciona .texto-lateral {
+        margin-top: 1rem;
+        /* Separación con el título */
+    }
+
+    #como-funciona .texto .texto-lateral p {
+        background-color: #f9f9f9;
+        /* Fondo ligeramente gris */
+        margin: 0.5rem 0;
+        /* Espaciado entre los bloques */
+        padding: 0.8rem 1rem;
+        /* Espaciado interno */
+        text-align: left;
+        /* Alineación izquierda */
+        border-radius: 5px;
+        /* Bordes redondeados */
+        font-size: 1.5em;
+        /* Tamaño del texto */
+        color: #333;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Sombra sutil */
+    }
+
+    #beneficios {
+        padding-top: 5%;
+        background-color: #ffffff;
+        padding-bottom: 0px;
+    }
+
+    #beneficios .container {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #beneficios .titulo-beneficios h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .bene {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .bene-img {
+        flex: 1 1 40%;
+        max-width: 40%;
+        text-align: center;
+    }
+
+    .bene-img img {
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .texto {
+        flex: 1 1 50%;
+        max-width: 50%;
+        text-align: left;
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .texto p {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .p-beneficios {
+        margin-left: 0;
+        text-align: start;
+    }
+
+    .bene-cuente {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .bene-cuente-h2 .bene-2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+
+    .bene-cuente-texto .link button {
+        padding: 0.8rem 2rem;
+        font-size: 1.2rem;
+        color: #fff;
+        background-color: #049602;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .bene-cuente-texto .link button:hover {
+        background-color: #037d01;
+    }
+
+    /* Servicios */
+    #servicios .container h1 {
+        color: white;
+        padding: 0;
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    #servicios .container p {
+        color: white;
+        padding: 0;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    #servicios .container h3 {
+        color: white;
+        padding: 0;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+
+
+    form {
+        align-items: center;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9em;
+        align-items: center;
+    }
+
+    form button {
+        font-size: 1em;
+    }
+
+
+    #contacto {
+        height: 100vh;
+        /* Para que tome toda la altura de la pantalla */
+        width: 100vw;
+        /* Para que tome todo el ancho de la pantalla */
+        margin: 0;
+        /* Elimina cualquier margen externo */
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+        /* Opcional: previene el scroll extra */
+    }
+
+    .contacto-contacto {
+        position: relative;
+
+        align-items: center;
+        height: 100%;
+        /* Asegura que ocupe toda la altura del contenedor */
+        width: 100%;
+        /* Asegura que ocupe todo el ancho del contenedor */
+        padding: 5% 0;
+        color: #ffffff;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("/imagenes/contacto.png") no-repeat center center/cover;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    form input,
+    form textarea {
+        width: 50%;
+        align-items: center;
+        padding: 12px;
+        border: 1px solid #888888;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 1.4em;
+        font-family: Arial, sans-serif
+    }
+
+
+    /* Imagen de fondo con capa oscura */
+    .contacto-contacto::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* Asegura que la capa cubra todo el ancho */
+        height: 100%;
+
+        align-items: center;
+        /* Asegura que la capa cubra toda la altura */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Oscurece el fondo */
+        z-index: 1;
+    }
+
+    /* Contenedor del formulario */
+    .formulario {
+        position: relative;
+        align-items: center;
+        z-index: 2;
+        background-color: rgba(60, 60, 60, 0.9);
+        border-radius: 15px;
+        padding: 20px;
+        width: 50%;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    /* Título */
+    .formulario h2 {
+
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+
+    /* Campos del formulario */
+    .campo {
+
+        align-items: center;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .campo input,
+    .campo textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #888888;
+        border-radius: 8px;
+        background-color: #2c2c2c;
+        color: #ffffff;
+        font-size: 1em;
+    }
+
+    .campo input::placeholder,
+    .campo textarea::placeholder {
+        color: #fffefe;
+    }
+
+    .campo textarea {
+        resize: none;
+        height: 100px;
+    }
+
+    /* Botón de envío */
+    .btn-enviar {
+        display: block;
+        width: 100%;
+        color: #000000;
+        background-color: #049602;
+        border-color: #049602;
+        padding: 1rem;
+        font-size: 1.25rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-enviar:hover {
+        background-color: #037d01;
+    }
+
+    /* Redes sociales */
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .redes-sociales .icono {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+    }
+
+    .redes-sociales .icono:hover {
+        background-color: #888888;
+    }
+
+    .redes-sociales .icono img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .bene-img-2 {
+        flex: 1 1 100%;
+        text-align: end;
+        display: block;
+        /* disponer en bloques */
+        margin: 0 auto;
+        /* centrar horizontalmente */
+        max-width: 100%;
+        /* Ancho máximo */
+        text-align: center;
+    }
+
+    .bene-img-2 img {
+        width: 150px;
+        height: auto;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+
+
+
+
+    /*SECCION: como-funciona*/
+    #quienes-somos .container {
+        padding: 1% 1%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #quienes-somos .container h1 {
+        text-align: center;
+        /* font-size: 1.25rem; */
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1rem;
+        font-size: 4rem;
+    }
+
+
+
+    #quienes-somos {
+        padding: 3% 5%;
+        /* Espaciado general de la sección */
+        background-color: #ffffff;
+        /* Fondo blanco */
+    }
+
+    #quienes-somos p {
+        text-align: center;
+        /* Centrar el texto */
+        margin-bottom: 2rem;
+        font-size: 5rem;
+        /* Ajustar tamaño de la fuente */
+        font-weight: bold;
+        color: #000000;
+    }
+
+    #quienes-somos .container p {
+        text-align: center;
+        /* font-size: 1.25rem; */
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1.5rem;
+        font-size: 5rem;
+    }
+
+    #quienes-somos .contenido-principal {
+        display: flex;
+        flex-wrap: wrap;
+        /* Asegura que los elementos se ajusten en pantallas pequeñas */
+        gap: 2rem;
+        /* Espaciado entre columnas */
+        justify-content: center;
+        /* Centrar el contenido principal */
+        align-items: flex-start;
+        /* Alineación superior para textos largos */
+    }
+
+
+    #quienes-somos .texto {
+        flex: 1 1 50%;
+        /* Ocupa el 50% del contenedor */
+        max-width: 100%;
+    }
+
+    #quienes-somos .texto h1 {
+        font-size: 2.5rem;
+        /* Tamaño del título */
+        margin-bottom: 1rem;
+        /* Separación del título con los párrafos */
+        color: #000000;
+        font-weight: bold;
+    }
+
+    #quienes-somos .texto-lateral {
+        margin-top: 1rem;
+        /* Separación con el título */
+    }
+
+    #quienes-somos .texto-lateral p {
+        background-color: #f9f9f9;
+        /* Fondo ligeramente gris */
+        margin: 0.5rem 0;
+        /* Espaciado entre los bloques */
+        padding: 0.8rem 1rem;
+        /* Espaciado interno */
+        text-align: left;
+        /* Alineación izquierda */
+        border-radius: 5px;
+        /* Bordes redondeados */
+        font-size: 1.5rem;
+        /* Tamaño del texto */
+        color: #333;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Sombra sutil */
+    }
+
+
+    .card-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 330px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 10px auto;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .card .card-icon {
+        margin: 10px;
+    }
+
+    .card .card-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-body h5 {
+        font-size: 2rem;
+        /* Ajusta a un tamaño razonable */
+        color: #333;
+        /* Puedes ajustar el color según tu preferencia */
+    }
+
+}
